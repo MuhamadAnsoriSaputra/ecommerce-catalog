@@ -1,0 +1,161 @@
+/* Palet warna */
+:root {
+  --navy: #002772;
+  --pink: #fde2ff;
+  --purple: #720060;
+  --soft-blue: #d6e6ff;
+  --light-gray: #dcdcdc;
+  --dark-gray: #3f3f3f;
+  --white: #ffffff;
+}
+
+/* All */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.section-container {
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background */
+.men-section {
+  background: var(--soft-blue);
+  background-image: url("data:image/svg+xml,\
+  <svg width='200' height='200' xmlns='http://www.w3.org/2000/svg'>\
+  <rect x='10' y='10' width='6' height='6' fill='%23002772' opacity='0.15'/>\
+  <circle cx='80' cy='40' r='4' fill='%23002772' opacity='0.15'/>\
+  <polygon points='140,100 150,115 130,115' fill='%23002772' opacity='0.15'/>\
+  </svg>");
+}
+
+.women-section {
+  background: var(--pink);
+  background-image: url("data:image/svg+xml,\
+  <svg width='200' height='200' xmlns='http://www.w3.org/2000/svg'>\
+  <rect x='10' y='10' width='6' height='6' fill='%23720060' opacity='0.15'/>\
+  <circle cx='80' cy='40' r='4' fill='%23720060' opacity='0.15'/>\
+  <polygon points='140,100 150,115 130,115' fill='%23720060' opacity='0.15'/>\
+  </svg>");
+}
+
+.unavailable-section {
+  background: #ebebeb;
+}
+
+/* Card produk */
+.product-card {
+  background: var(--white);
+  width: 820px;
+  padding: 35px;
+  border-radius: 15px;
+  display: flex;
+  gap: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  width: 260px;
+  height: auto;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.category-rating {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0 15px;
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.rating-dots .dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid var(--dark-gray);
+  margin-left: 4px;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--dark-gray);
+  line-height: 1.4;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.button-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.buy-btn {
+  background: var(--navy);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.next-btn {
+  background: white;
+  border: 2px solid var(--navy);
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Women styled h2 */
+.women-section .product-info h2 {
+  color: var(--purple);
+}
+
+/* Men styled h2 */
+.men-section .product-info h2 {
+  color: var(--navy);
+}
+
+/* Produk tidak tersedia */
+.unavailable-box {
+  background: white;
+  width: 700px;
+  padding: 80px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sad-face {
+  font-size: 90px;
+  opacity: 0.3;
+}
+
+.next-unavailable-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: 2px solid var(--dark-gray);
+  background: white;
+  cursor: pointer;
+}
